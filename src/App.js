@@ -3,7 +3,7 @@ import Corpo from './components/Corpo'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='main-container'>
       <Titolo text='Le Nostre Vacanze' />
       <Corpo />
     </div>
