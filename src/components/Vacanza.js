@@ -7,8 +7,10 @@ const Vacanza = ({ titolo, descrizione, durata, img, prezzo, next, prev }) => {
         <img src={img} alt={titolo} height={240} />
       </div>
       <div className='hc_content'>
-        <h4>{titolo}</h4>
-        <p className='hc_cont_descr'>{descrizione}</p>
+        <div className='hc_text'>
+          <h4>{titolo}</h4>
+          <p className='hc_cont_descr'>{descrizione}</p>
+        </div>
         <div className='hc_content_info'>
           <p>{durata}</p>
           <p>{(prezzo / 100).toFixed(2)}€</p>

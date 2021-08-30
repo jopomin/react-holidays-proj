@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #222233;
 }
 
 code {
@@ -17,11 +18,17 @@ code {
   text-align: center;
 }
 
+h1 {
+  color: #ddbb00;
+  margin: 10px 0 45px;
+}
+
 .holycard {
   width: 600px;
   margin: 0 auto;
   border-radius: 20px;
-  background: lightblue;
+  background: rgba(90, 90, 120, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
@@ -43,6 +50,10 @@ code {
   align-items: center;
 }
 
+.hc_text {
+  color: #fff;
+}
+
 .hc_content h4 {
   font-size: 26px;
   margin: 0;
@@ -50,6 +61,8 @@ code {
 
 .hc_cont_descr {
   font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hc_content_info {
@@ -58,10 +71,22 @@ code {
   align-items: center;
   font-weight: bold;
   width: 100%;
+  color: #fff;
 }
 
 .hc_buttons {
-  width: 100px;
+  width: 120px;
   display: flex;
   justify-content: space-between;
+}
+
+.hc_buttons button {
+  border: none;
+  border-radius: 5px;
+  background: #ddbb00;
+  color: #222233;
+  font-weight: bold;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
